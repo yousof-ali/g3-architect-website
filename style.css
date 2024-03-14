@@ -1,0 +1,223 @@
+*{
+    font-family: "Work Sans", sans-serif;
+}
+/* shared style  */
+.btn-primary{
+    border-radius: 8px;
+    background-color: #FF900E;
+    padding: 20px 24px;
+    font-size: 1.25rem;
+    font-weight: 600;
+    cursor: pointer;
+    color: white;
+    border: 0;
+}
+.text-light-gray{
+    color: #727272;
+}
+.section-title{
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #131313;
+}
+
+header{
+    background-color: rgba(255, 144, 14, 0.10);
+    padding: 40px 240px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav > ul{
+    display: flex;
+}
+nav li{
+    list-style: none;
+    margin-right:30px;
+    font-weight: 500;
+    font-size: 1rem;
+}
+nav li a{
+    text-decoration: none;
+}
+/* hero  */
+.bannar-content{
+    max-width: 800px;
+    text-align: center;
+    margin: 0 auto;
+}
+.bannar-title{
+    font-weight: 700;
+    font-size: 4rem;
+    color: #131313;
+}
+
+.bannar-image{
+    margin-top: 20px;
+    width: 100%;
+}
+/* main styles */
+main{
+    max-width: 1440px;
+    margin:70px auto;
+
+}  
+.teams-container{
+    display: flex;
+    align-items: center;
+}  
+.image-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1.5rem;
+
+}
+.teams-content{
+    padding-left: 70px;
+    padding-right: 70px;
+}
+.teams-title{
+    font-size: 2.8rem;
+}
+.teams-title .quick-list{
+    font-weight: 500;
+}
+.teams-title .text-feature{
+    font-weight: 700;
+    color: #FF900E;
+}
+/* feature section start  */
+.features{
+    display: flex;
+    margin-top: 130px;
+    gap: 100px;
+}
+.features .card{
+    padding: 30px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+}
+.feature-img img{
+    height: 90%;
+    margin-left: 50px;
+}
+.features .section-title{
+    border-left: 5px solid #FF900E;
+    padding: 20px;
+}
+.ten-years-badge{
+    background-color: #FF900E;
+    color: white;
+    border-radius: 8px;
+    width: 342px;
+    padding: 35px;
+    text-align: center;
+    position: relative;
+    bottom: 100px;
+}
+.ten-years-badge h2{
+    font-size: 3rem;
+    margin: 0px;
+}
+.ten-years-badge p{
+    font-size: 1.5rem;
+    margin: 0;
+}
+/* facts start  */
+.facts-card-container{
+    display: flex;
+    justify-content: space-around;
+}
+.facts-card-container .card{
+    border-radius: 8px;
+    border: 1px solid #FF900E;
+    text-align: center;
+    padding:30px;
+}
+.facts-card-container .card-title{
+    font-weight: 600;
+    font-size: 1.25rem;
+    margin-top: 5px;
+}
+.facts-card-container .card-start{
+    font-size: 2.8rem;
+    color: #424242;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+/* sponsors styles  */
+.sponsors{
+    text-align: center;
+}
+.spnsors-img-container{
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 30px;
+}
+.spnsors-img-container img{
+    width: 165px;
+    
+}
+/* responsive media queries */
+/* mobile devices */
+@media screen and (max-width: 576px) {
+    header{
+        padding: 20px;
+    }
+    nav{
+        flex-direction: column;
+    }
+    .section-title{
+        font-size: 1.5rem;
+    }
+    .teams-container, .facts-card-container, .spnsors-img-container,.features{
+        flex-direction: column;
+    }
+    .image-container{
+        grid-template-columns: 1fr;
+    }
+    .teams-content, .facts-card-container{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .facts-card-container{
+        gap: 20px;
+    }
+    .feature-img img{
+        width: 100%;
+        margin-left: 0px;
+    }
+    .ten-years-badge{
+        max-width: 250px;
+    }
+    
+}
+/* medium devices  */
+@media screen and (min-width: 577px) and (max-width: 960px){
+    header{
+        padding: 50px;
+    }
+    nav{
+        flex-direction: column;
+    }
+    .teams-container,.spnsors-img-container, .features{
+        flex-direction: column;
+    }
+    .image-container img{
+        width: 100%;
+    }
+    .feature-img img{
+        width: 100%;
+        margin-left: 0px;
+    }
+    .facts-card-container .card{
+        padding:15px;
+    }
+}
